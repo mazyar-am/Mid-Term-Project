@@ -7,18 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #6D1600;
+      --color-secondary: #282A3A;
+      --color-border: #D9D9D9;
+      
+      --font-family-inter: 'Inter', sans-serif;
+      --font-family-playfair: 'Playfair Display', serif;
+        }
+        @layer utilities {
+      .font-inter {
+        font-family: var(--font-family-inter);
+      }
+      .font-playfair {
+        font-family: var(--font-family-playfair);
+      }
+    }
+      </style>
+      
     <title>Mid-Term Project</title>
 </head>
 
-<body >
+<body>
     <main class="px-20 pt-6">
         <header class="flex justify-between items-center">
             <div>
@@ -26,7 +41,7 @@
             </div>
             <div>
                 <nav>
-                    <ul class="flex flex-row gap-14">
+                    <ul class="flex flex-row gap-14 font-inter text-xl text-secondary">
                         <li><a href="">Products</a></li>
                         <li><a href=""></a>About us</li>
                         <li><a href=""></a>Testimonial</li>
@@ -74,13 +89,13 @@
         <!-- Hero -->
         <section>
             <div class="py-20 flex flex-col text-center items-center gap-6">
-                <h1 class="font-serif text-6xl font-medium text-[#282A3A]">Enjoy Your Favorite <br>
+                <h1 class="font-playfair text-6xl font-medium text-secondary">Enjoy Your Favorite <br>
                     Coffee with Ngopi</h1>
-                <p class="font-sans text-xl font-normal text-[#282A3A]">Discover tranquility at Ngopi a sanctuary
+                <p class="font-inter text-xl font-normal text-secondary">Discover tranquility at Ngopi a sanctuary
                     for unwinding, <br>
                     where your evenings are perfected with relaxation and rich flavors.</p>
                 <div
-                    class="flex items-center gap-4 px-12 py-6 bg-[#6D1600] border-spacing-px border-solid border-[#6D1600] rounded-tr-[32px] rounded-bl-[32px] font-serif text-2xl text-white">
+                    class="flex items-center gap-4 px-12 py-6 bg-primary border-spacing-px border-solid border-primary rounded-tr-[32px] rounded-bl-[32px] font-playfair text-2xl text-white">
                     <a href="#">Explore product</a>
                     <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3216_39)">
@@ -106,52 +121,52 @@
         </section>
         <!-- info -->
         <section>
-    
+
             <div class="w-full flex justify-center">
-                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-[#282A3A] to-transparent border-0">
+                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-secondary to-transparent border-0">
             </div>
             <div class="my-20 flex items-center gap-10 justify-center">
                 <div class="flex flex-row items-center justify-center h-full">
                     <div class="flex flex-col items-center justify-center gap-2">
-                        <h1 class="font-sans text-6xl">30+</h1>
-                        <p class="font-serif text-2xl">Coffee Variant</p>
+                        <h1 class="font-inter text-6xl">30+</h1>
+                        <p class="font-playfair text-2xl">Coffee Variant</p>
                     </div>
-                    <hr class=" mx-10 w-px h-28 bg-[#282A3A] border-0">
+                    <hr class=" mx-10 w-px h-28 bg-secondary border-0">
                 </div>
                 <div class="flex flex-row items-center justify-center h-full">
                     <div class="flex flex-col items-center justify-center gap-2">
-                        <h1 class="font-sans text-6xl">20+</h1>
-                        <p class="font-serif text-2xl">Meeting room</p>
+                        <h1 class="font-inter text-6xl">20+</h1>
+                        <p class="font-playfair text-2xl">Meeting room</p>
                     </div>
-                    <hr class="mx-10 w-px h-28 bg-[#282A3A] border-0">
+                    <hr class="mx-10 w-px h-28 bg-secondary border-0">
                 </div>
                 <div class="flex flex-row items-center justify-center h-full">
                     <div class="flex flex-col items-center justify-center gap-2">
-                        <h1 class="font-sans text-6xl">25+</h1>
-                        <p class="font-serif text-2xl">Event space</p>
+                        <h1 class="font-inter text-6xl">25+</h1>
+                        <p class="font-playfair text-2xl">Event space</p>
                     </div>
-                    <hr class="mx-10 w-px h-28 bg-[#282A3A] border-0">
+                    <hr class="mx-10 w-px h-28 bg-secondary border-0">
                 </div>
                 <div class="flex flex-row items-center justify-center">
                     <div class="flex flex-col items-center justify-center gap-2">
-                        <h1 class="font-sans text-6xl">40+</h1>
-                        <p class="font-serif text-2xl">Global Achievement</p>
+                        <h1 class="font-inter text-6xl">40+</h1>
+                        <p class="font-playfair text-2xl">Global Achievement</p>
                     </div>
                 </div>
             </div>
             <div class="w-full flex justify-center">
-                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-[#282A3A] to-transparent border-0">
+                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-secondary to-transparent border-0">
             </div>
         </section>
         <!-- products -->
         <section>
             <div class="py-20 flex flex-col text-center items-center">
-                <h1 class="font-sans text-2xl opacity-55">Our products</h1>
-                <p class="font-serif text-4xl">From Top Quality Materials</p>
+                <h1 class="font-inter text-2xl opacity-55">Our products</h1>
+                <p class="font-playfair text-4xl">From Top Quality Materials</p>
             </div>
             <div class="flex items-center justify-center">
                 <div
-                    class=" flex items-center justify-center bg-[#F6F6F6] rounded-[40px] w-[556px] h-20 py-4 px-10 font-sans text-2xl opacity-70 text-[#282A3A]">
+                    class=" flex items-center justify-center bg-[#F6F6F6] rounded-[40px] w-[556px] h-20 py-4 px-10 font-inter text-2xl opacity-70 text-secondary">
                     <div class="grid grid-cols-1 sm:grid-cols-3 text-center">
                         <div class="bg-white px-10 py-4 rounded-[40px] border border-white">
                             <p>Latte</p>
@@ -170,7 +185,7 @@
                     <img src="/img/Latte1.png" alt="">
                     <div class="py-4 px-6 flex flex-col">
                         <div class="flex flex-col gap-4">
-                            <h1 class="font-sans text-2xl font-semibold">Chocolate Latte</h1>
+                            <h1 class="font-inter text-2xl font-semibold">Chocolate Latte</h1>
                             <div class="flex flex-row items-center">
                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -178,15 +193,15 @@
                                         d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
                                         fill="#FFB31F" />
                                 </svg>
-                                <p class="ml-1 font-sans text-xl font-bold opacity-70 text-[#282A3A]">4.9</p>
-                                <p class="ml-2 font-sans text-[16px] font-normal opacity-65 text-[#282A3A]">(360
+                                <p class="ml-1 font-inter text-xl font-bold opacity-70 text-secondary">4.9</p>
+                                <p class="ml-2 font-inter text-[16px] font-normal opacity-65 text-secondary">(360
                                     reviews)</p>
                             </div>
-                            <p class="font-sans text-[16px] font-normal opacity-70 text-[#282A3A]">Lorem ipsum dolor sit
+                            <p class="font-inter text-[16px] font-normal opacity-70 text-secondary">Lorem ipsum dolor sit
                                 amet <br>consectetur. Scelerisque urna vel <br> sit dolor fringilla</p>
                             <div class="flex flex-row justify-between items-center w-64">
-                                <p class="font-sans text-xl font-bold opacity-70 text-[#282A3A]">$2.9</p>
-                                <div class="w-20 h-8 bg-[#6D1600] rounded-lg flex items-center justify-center">
+                                <p class="font-inter text-xl font-bold opacity-70 text-secondary">$2.9</p>
+                                <div class="w-20 h-8 bg-primary rounded-lg flex items-center justify-center">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 1V19" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -201,7 +216,7 @@
                     <img src="/img/Latte2.png" alt="">
                     <div class="py-4 px-6 flex flex-col">
                         <div class="flex flex-col gap-4">
-                            <h1 class="font-sans text-2xl font-semibold">Mocha Latte</h1>
+                            <h1 class="font-inter text-2xl font-semibold">Mocha Latte</h1>
                             <div class="flex flex-row items-center">
                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -209,15 +224,15 @@
                                         d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
                                         fill="#FFB31F" />
                                 </svg>
-                                <p class="ml-1 font-sans text-xl font-bold opacity-70 text-[#282A3A]">5.0</p>
-                                <p class="ml-2 font-sans text-[16px] font-normal opacity-65 text-[#282A3A]">(180
+                                <p class="ml-1 font-inter text-xl font-bold opacity-70 text-secondary">5.0</p>
+                                <p class="ml-2 font-inter text-[16px] font-normal opacity-65 text-secondary">(180
                                     reviews)</p>
                             </div>
-                            <p class="font-sans text-[16px] font-normal opacity-70 text-[#282A3A]">Lorem ipsum dolor sit
+                            <p class="font-inter text-[16px] font-normal opacity-70 text-secondary">Lorem ipsum dolor sit
                                 amet <br>consectetur. Scelerisque urna vel <br> sit dolor fringilla</p>
                             <div class="flex flex-row justify-between items-center w-64">
-                                <p class="font-sans text-xl font-bold opacity-70 text-[#282A3A]">$2.7</p>
-                                <div class="w-20 h-8 bg-[#6D1600] rounded-lg flex items-center justify-center">
+                                <p class="font-inter text-xl font-bold opacity-70 text-secondary">$2.7</p>
+                                <div class="w-20 h-8 bg-primary rounded-lg flex items-center justify-center">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 1V19" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -232,7 +247,7 @@
                     <img src="/img/Latte3.png" alt="">
                     <div class="py-4 px-6 flex flex-col">
                         <div class="flex flex-col gap-4">
-                            <h1 class="font-sans text-2xl font-semibold">Coffee Latte</h1>
+                            <h1 class="font-inter text-2xl font-semibold">Coffee Latte</h1>
                             <div class="flex flex-row items-center">
                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -240,15 +255,15 @@
                                         d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
                                         fill="#FFB31F" />
                                 </svg>
-                                <p class="ml-1 font-sans text-xl font-bold opacity-70 text-[#282A3A]">4.8</p>
-                                <p class="ml-2 font-sans text-[16px] font-normal opacity-65 text-[#282A3A]">(450
+                                <p class="ml-1 font-inter text-xl font-bold opacity-70 text-secondary">4.8</p>
+                                <p class="ml-2 font-inter text-[16px] font-normal opacity-65 text-secondary">(450
                                     reviews)</p>
                             </div>
-                            <p class="font-sans text-[16px] font-normal opacity-70 text-[#282A3A]">Lorem ipsum dolor sit
+                            <p class="font-inter text-[16px] font-normal opacity-70 text-secondary">Lorem ipsum dolor sit
                                 amet <br>consectetur. Scelerisque urna vel <br> sit dolor fringilla</p>
                             <div class="flex flex-row justify-between items-center w-64">
-                                <p class="font-sans text-xl font-bold opacity-70 text-[#282A3A]">$2.9</p>
-                                <div class="w-20 h-8 bg-[#6D1600] rounded-lg flex items-center justify-center">
+                                <p class="font-inter text-xl font-bold opacity-70 text-secondary">$2.9</p>
+                                <div class="w-20 h-8 bg-primary rounded-lg flex items-center justify-center">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 1V19" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -263,7 +278,7 @@
                     <img src="/img/Latte4.png" alt="">
                     <div class="py-4 px-6 flex flex-col">
                         <div class="flex flex-col gap-4">
-                            <h1 class="font-sans text-2xl font-semibold">Hazelnut Latte</h1>
+                            <h1 class="font-inter text-2xl font-semibold">Hazelnut Latte</h1>
                             <div class="flex flex-row items-center">
                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -271,15 +286,15 @@
                                         d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
                                         fill="#FFB31F" />
                                 </svg>
-                                <p class="ml-1 font-sans text-xl font-bold opacity-70 text-[#282A3A]">4.9</p>
-                                <p class="ml-2 font-sans text-[16px] font-normal opacity-65 text-[#282A3A]">(390
+                                <p class="ml-1 font-inter text-xl font-bold opacity-70 text-secondary">4.9</p>
+                                <p class="ml-2 font-inter text-[16px] font-normal opacity-65 text-secondary">(390
                                     reviews)</p>
                             </div>
-                            <p class="font-sans text-[16px] font-normal opacity-70 text-[#282A3A]">Lorem ipsum dolor sit
+                            <p class="font-inter text-[16px] font-normal opacity-70 text-secondary">Lorem ipsum dolor sit
                                 amet <br>consectetur. Scelerisque urna vel <br> sit dolor fringilla</p>
                             <div class="flex flex-row justify-between items-center w-64">
-                                <p class="font-sans text-xl font-bold opacity-70 text-[#282A3A]">$2.8</p>
-                                <div class="w-20 h-8 bg-[#6D1600] rounded-lg flex items-center justify-center">
+                                <p class="font-inter text-xl font-bold opacity-70 text-secondary">$2.8</p>
+                                <div class="w-20 h-8 bg-primary rounded-lg flex items-center justify-center">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 1V19" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -292,36 +307,39 @@
                 </div>
             </div>
             <div class="flex justify-center gap-1 mt-10 mb-20">
-                <button class="w-2 h-2 rounded-full bg-[#6D1600]"></button>
-                <button class="w-2 h-2 rounded-full bg-[#D9D9D9]"></button>
-                <button class="w-2 h-2 rounded-full bg-[#D9D9D9]"></button>
-                <button class="w-2 h-2 rounded-full bg-[#D9D9D9]"></button>
+                <button class="w-2 h-2 rounded-full bg-primary"></button>
+                <button class="w-2 h-2 rounded-full bg-border"></button>
+                <button class="w-2 h-2 rounded-full bg-border"></button>
+                <button class="w-2 h-2 rounded-full bg-border"></button>
             </div>
         </section>
         <!-- about-us -->
         <section>
             <div class="w-full flex justify-center">
-                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-[#282A3A] to-transparent border-0">
+                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-secondary to-transparent border-0">
             </div>
             <div class="py-20 flex flex-col text-center items-center">
-                <h1 class="font-sans text-2xl opacity-55 underline underline-offset-4 mb-2">About us</h1>
-                <p class="font-serif text-4xl">Why we are the best</p>
+                <h1 class="font-inter text-2xl opacity-55 underline underline-offset-4 mb-2">About us</h1>
+                <p class="font-playfair text-4xl">Why we are the best</p>
             </div>
             <div class="grid grid-cols-2 gap-20 pb-20">
-                <div class="flex flex-col justify-between font-sans text-xl font-normal text-[#282A3A]">
-                    <a class="underline underline-offset-[5px]" href="https://www.google.com/">Lorem ipsum dolor sit amet
-                        consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio
+                <div class="flex flex-col justify-between font-inter text-xl font-normal text-secondary">
+                    <a class="underline underline-offset-[5px]" href="https://www.google.com/">Lorem ipsum dolor sit
+                        amet
+                        consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium
+                        odio
                         lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.</a>
                     <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus
                         amet. Integer sed pretium odio lectus at malesuada sed eget nunc.</p>
                     <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus
                         amet.</p>
                     <div
-                        class="flex flex-row items-center justify-between px-12 py-6 bg-[#6D1600] border-spacing-px border-solid border-[#6D1600] rounded-tr-[32px] rounded-bl-[32px] font-serif text-2xl text-white w-72 h-20">
+                        class="flex flex-row items-center justify-between px-12 py-6 bg-primary border-spacing-px border-solid border-primary rounded-tr-[32px] rounded-bl-[32px] font-playfair text-2xl text-white w-72 h-20">
                         <a href="#">READ MORE</a>
                         <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_3216_39)">
-                                <path d="M9 8.5L26 25.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9 8.5L26 25.5" stroke="white" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                                 <path d="M12.1875 25.5H26V11.6875" stroke="white" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </g>
@@ -339,21 +357,21 @@
                 </div>
             </div>
             <div class="w-full flex justify-center">
-                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-[#282A3A] to-transparent border-0">
+                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-secondary to-transparent border-0">
             </div>
         </section>
         <!-- testimonial -->
         <section>
             <div class="py-20 flex flex-col text-center items-center">
-                <h1 class="font-sans text-2xl opacity-55">Testimonial</h1>
-                <p class="font-serif text-4xl">What our buyers say</p>
+                <h1 class="font-inter text-2xl opacity-55">Testimonial</h1>
+                <p class="font-playfair text-4xl">What our buyers say</p>
             </div>
             <div class="flex flex-row justify-around">
                 <div class="flex flex-col gap-4">
                     <div class="flex items-center gap-4">
                         <img src="/img/testimonial1.png" alt="">
                         <div class="flex flex-col gap-2">
-                            <h2 class="font-sans text-xl font-semibold text-[#282A3A]">Michael Wong</h2>
+                            <h2 class="font-inter text-xl font-semibold text-secondary">Michael Wong</h2>
                             <svg width="120" height="24" viewBox="0 0 120 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -374,7 +392,7 @@
                             </svg>
                         </div>
                     </div>
-                    <p class="font-sans text-xl font-normal text-[#282A3A] w-80">Lorem ipsum dolor sit amet consectetur.
+                    <p class="font-inter text-xl font-normal text-secondary w-80">Lorem ipsum dolor sit amet consectetur.
                         Scelerisque urna vel sit dolor fringilla volutpat lectus
                         amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id
                         vel tortor dui adipiscing.</p>
@@ -383,7 +401,7 @@
                     <div class="flex items-center gap-4">
                         <img src="/img/testimonial2.png" alt="">
                         <div class="flex flex-col gap-2">
-                            <h2 class="font-sans text-xl font-semibold text-[#282A3A]">Avril Song</h2>
+                            <h2 class="font-inter text-xl font-semibold text-secondary">Avril Song</h2>
                             <svg width="121" height="24" viewBox="0 0 121 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -402,10 +420,10 @@
                                     d="M107.382 2.92705C107.681 2.00574 108.985 2.00574 109.284 2.92705L110.803 7.60081C110.937 8.01284 111.32 8.2918 111.754 8.2918H116.668C117.637 8.2918 118.04 9.53141 117.256 10.1008L113.28 12.9894C112.93 13.244 112.783 13.6954 112.917 14.1074L114.435 18.7812C114.735 19.7025 113.68 20.4686 112.897 19.8992L108.921 17.0106C108.57 16.756 108.096 16.756 107.745 17.0106L103.769 19.8992C102.986 20.4686 101.931 19.7025 102.231 18.7812L103.749 14.1074C103.883 13.6954 103.736 13.244 103.386 12.9894L99.4102 10.1008C98.6265 9.53141 99.0293 8.2918 99.998 8.2918H104.912C105.346 8.2918 105.729 8.01284 105.863 7.60081L107.382 2.92705Z"
                                     fill="#D9D9D9" />
                             </svg>
-    
+
                         </div>
                     </div>
-                    <p class="font-sans text-xl font-normal text-[#282A3A] w-80">Lorem ipsum dolor sit amet consectetur.
+                    <p class="font-inter text-xl font-normal text-secondary w-80">Lorem ipsum dolor sit amet consectetur.
                         Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus
                         at malesuada sed eget nunc.</p>
                 </div>
@@ -413,7 +431,7 @@
                     <div class="flex items-center gap-4">
                         <img src="/img/testimonial3.png" alt="">
                         <div class="flex flex-col gap-2">
-                            <h2 class="font-sans text-xl font-semibold text-[#282A3A]">Jeanne Wood</h2>
+                            <h2 class="font-inter text-xl font-semibold text-secondary">Jeanne Wood</h2>
                             <svg width="121" height="24" viewBox="0 0 121 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -432,33 +450,33 @@
                                     d="M107.382 2.92705C107.681 2.00574 108.985 2.00574 109.284 2.92705L110.803 7.60081C110.937 8.01284 111.32 8.2918 111.754 8.2918H116.668C117.637 8.2918 118.04 9.53141 117.256 10.1008L113.28 12.9894C112.93 13.244 112.783 13.6954 112.917 14.1074L114.435 18.7812C114.735 19.7025 113.68 20.4686 112.897 19.8992L108.921 17.0106C108.57 16.756 108.096 16.756 107.745 17.0106L103.769 19.8992C102.986 20.4686 101.931 19.7025 102.231 18.7812L103.749 14.1074C103.883 13.6954 103.736 13.244 103.386 12.9894L99.4102 10.1008C98.6265 9.53141 99.0293 8.2918 99.998 8.2918H104.912C105.346 8.2918 105.729 8.01284 105.863 7.60081L107.382 2.92705Z"
                                     fill="#D9D9D9" />
                             </svg>
-    
+
                         </div>
                     </div>
-                    <p class="font-sans text-xl font-normal text-[#282A3A] w-80">Lorem ipsum dolor sit amet consectetur.
+                    <p class="font-inter text-xl font-normal text-secondary w-80">Lorem ipsum dolor sit amet consectetur.
                         Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus
                         at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.</p>
                 </div>
-    
+
             </div>
             <div class="flex justify-center gap-1 mt-10 mb-20">
-                <button class="w-2 h-2 rounded-full bg-[#6D1600]"></button>
-                <button class="w-2 h-2 rounded-full bg-[#D9D9D9]"></button>
-                <button class="w-2 h-2 rounded-full bg-[#D9D9D9]"></button>
-                <button class="w-2 h-2 rounded-full bg-[#D9D9D9]"></button>
+                <button class="w-2 h-2 rounded-full bg-primary"></button>
+                <button class="w-2 h-2 rounded-full bg-border"></button>
+                <button class="w-2 h-2 rounded-full bg-border"></button>
+                <button class="w-2 h-2 rounded-full bg-border"></button>
             </div>
             <div class="w-full flex justify-center">
-                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-[#282A3A] to-transparent border-0">
+                <hr class="h-px w-[1120px] bg-gradient-to-r from-transparent via-secondary to-transparent border-0">
             </div>
         </section>
         <!-- blog -->
         <section>
             <div class="py-20 flex flex-col text-center items-center">
-                <h1 class="font-sans text-2xl opacity-55">Blog</h1>
-                <p class="font-serif text-4xl">Read our articles</p>
+                <h1 class="font-inter text-2xl opacity-55">Blog</h1>
+                <p class="font-playfair text-4xl">Read our articles</p>
             </div>
             <div class="flex flex-row gap-8">
-                <div class="border border-solid border-[#D9D9D9] rounded-tr-[96px] rounded-bl-[40px] overflow-hidden">
+                <div class="border border-solid border-border rounded-tr-[96px] rounded-bl-[40px] overflow-hidden">
                     <div class="flex flex-col items-center gap-4 p-4">
                         <img src="/img/blog1.png" alt="">
                         <div class="flex flex-row items-center justify-between w-full">
@@ -476,7 +494,7 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p class="font-sans text-[14px] font-normal text-[#282A3A]">John Doe</p>
+                                <p class="font-inter text-[14px] font-normal text-secondary">John Doe</p>
                             </div>
                             <div class="flex items-center gap-2">
                                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
@@ -492,14 +510,16 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p class="font-sans text-[14px] font-normal text-[#282A3A]">Feb 23, 2024</p>
+                                <p class="font-inter text-[14px] font-normal text-secondary">Feb 23, 2024</p>
                             </div>
                         </div>
-                        <p class="font-sans text-2xl font-semibold text-[#282A3A] w-full">Lorem ipsum dolor sit amet <br>
+                        <p class="font-inter text-2xl font-semibold text-secondary w-full">Lorem ipsum dolor sit amet
+                            <br>
                             consectetur. Est tempor morbi <br> pellentesque.</p>
                         <div class="flex items-center w-full justify-end mr-4">
-                            <a class="font-sans text-[16px] font-normal text-[#282A3A]" href="#">View details</a>
-                            <svg width="16" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a class="font-inter text-[16px] font-normal text-secondary" href="#">View details</a>
+                            <svg width="16" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_3202_252)">
                                     <path d="M6.33301 3L11.333 8L6.33301 13" stroke="#282A3A" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -510,11 +530,11 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-    
+
                         </div>
                     </div>
                 </div>
-                <div class="border border-solid border-[#D9D9D9] rounded-tr-[96px] rounded-bl-[40px] overflow-hidden">
+                <div class="border border-solid border-border rounded-tr-[96px] rounded-bl-[40px] overflow-hidden">
                     <div class="flex flex-col items-center gap-4 p-4">
                         <img src="/img/blog2.png" alt="">
                         <div class="flex flex-row items-center justify-between w-full">
@@ -532,7 +552,7 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p class="font-sans text-[14px] font-normal text-[#282A3A]">John Doe</p>
+                                <p class="font-inter text-[14px] font-normal text-secondary">John Doe</p>
                             </div>
                             <div class="flex items-center gap-2">
                                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
@@ -548,14 +568,16 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p class="font-sans text-[14px] font-normal text-[#282A3A]">Feb 23, 2024</p>
+                                <p class="font-inter text-[14px] font-normal text-secondary">Feb 23, 2024</p>
                             </div>
                         </div>
-                        <p class="font-sans text-2xl font-semibold text-[#282A3A] w-full">Lorem ipsum dolor sit amet <br>
+                        <p class="font-inter text-2xl font-semibold text-secondary w-full">Lorem ipsum dolor sit amet
+                            <br>
                             consectetur. Est tempor morbi <br> pellentesque.</p>
                         <div class="flex items-center w-full justify-end mr-4">
-                            <a class="font-sans text-[16px] font-normal text-[#282A3A]" href="#">View details</a>
-                            <svg width="16" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a class="font-inter text-[16px] font-normal text-secondary" href="#">View details</a>
+                            <svg width="16" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_3202_252)">
                                     <path d="M6.33301 3L11.333 8L6.33301 13" stroke="#282A3A" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -566,11 +588,11 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-    
+
                         </div>
                     </div>
                 </div>
-                <div class="border border-solid border-[#D9D9D9] rounded-tr-[96px] rounded-bl-[40px] overflow-hidden">
+                <div class="border border-solid border-border rounded-tr-[96px] rounded-bl-[40px] overflow-hidden">
                     <div class="flex flex-col items-center gap-4 p-4">
                         <img src="/img/blog3.png" alt="">
                         <div class="flex flex-row items-center justify-between w-full">
@@ -588,7 +610,7 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p class="font-sans text-[14px] font-normal text-[#282A3A]">John Doe</p>
+                                <p class="font-inter text-[14px] font-normal text-secondary">John Doe</p>
                             </div>
                             <div class="flex items-center gap-2">
                                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
@@ -604,14 +626,16 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p class="font-sans text-[14px] font-normal text-[#282A3A]">Feb 23, 2024</p>
+                                <p class="font-inter text-[14px] font-normal text-secondary">Feb 23, 2024</p>
                             </div>
                         </div>
-                        <p class="font-sans text-2xl font-semibold text-[#282A3A] w-full">Lorem ipsum dolor sit amet <br>
+                        <p class="font-inter text-2xl font-semibold text-secondary w-full">Lorem ipsum dolor sit amet
+                            <br>
                             consectetur. Est tempor morbi <br> pellentesque.</p>
                         <div class="flex items-center w-full justify-end mr-4">
-                            <a class="font-sans text-[16px] font-normal text-[#282A3A]" href="#">View details</a>
-                            <svg width="16" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a class="font-inter text-[16px] font-normal text-secondary" href="#">View details</a>
+                            <svg width="16" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_3202_252)">
                                     <path d="M6.33301 3L11.333 8L6.33301 13" stroke="#282A3A" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -628,7 +652,7 @@
             </div>
             <div class="py-20 flex items-center justify-center">
                 <div
-                    class="flex flex-row items-center justify-between px-12 py-6 bg-[#6D1600] border-spacing-px border-solid border-[#6D1600] rounded-tr-[32px] rounded-bl-[32px] font-serif text-2xl text-white w-72 h-20">
+                    class="flex flex-row items-center justify-between px-12 py-6 bg-primary border-spacing-px border-solid border-primary rounded-tr-[32px] rounded-bl-[32px] font-playfair text-2xl text-white w-72 h-20">
                     <a href="#">READ MORE</a>
                     <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3216_39)">
@@ -647,12 +671,12 @@
         </section>
     </main>
     <footer>
-        <div class="w-1440px bg-[#282A3A] ">
+        <div class="w-1440px bg-secondary ">
             <div class="flex flex-row gap-20 px-20 py-20">
                 <div class="flex flex-col justify-between pb-36 text-white gap-8 w-96">
                     <div class="flex flex-row items-center gap-6">
                         <img src="/img/logo-footer.svg" alt="">
-                        <h1 class="font-sans font-semibold text-5xl">Ngopi</h1>
+                        <h1 class="font-inter font-semibold text-5xl">Ngopi</h1>
                     </div>
                     <div>
                         <p>Discover tranquility at Ngopi a sanctuary for unwinding, where your evenings are perfected
@@ -666,7 +690,7 @@
                 <div class="flex flex-col gap-10 w-[818px]">
                     <div class="flex flex-row items-start justify-between text-white">
                         <div class="flex flex-col gap-6">
-                            <h2 class="font-serif font-normal text-[28px]">Quick Links</h2>
+                            <h2 class="font-playfair font-normal text-[28px]">Quick Links</h2>
                             <div class="flex flex-col gap-4">
                                 <a href="#">Services</a>
                                 <a href="#">Portfolio</a>
@@ -676,7 +700,7 @@
 
                         </div>
                         <div class="flex flex-col gap-6">
-                            <h2 class="font-serif font-normal text-[28px]">Resources</h2>
+                            <h2 class="font-playfair font-normal text-[28px]">Resources</h2>
                             <div class="flex flex-col gap-4">
                                 <a href="#">Support</a>
                                 <a href="#">Privacy Policy</a>
@@ -685,7 +709,7 @@
 
                         </div>
                         <div class="flex flex-col gap-6">
-                            <h2 class="font-serif font-normal text-[28px]">Social Media</h2>
+                            <h2 class="font-playfair font-normal text-[28px]">Social Media</h2>
                             <div class="flex flex-row items-center gap-2">
                                 <a href="https://www.facebook.com/">
                                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -738,7 +762,7 @@
                     </div>
                     <div class="flex flex-row">
                         <div class="flex flex-col gap-6">
-                            <h2 class="font-serif font-normal text-[28px] text-white">Subscribe</h2>
+                            <h2 class="font-playfair font-normal text-[28px] text-white">Subscribe</h2>
                             <div
                                 class="bg-gray-700 w-[818px] h-20 rounded-2xl flex flex-row items-center justify-between">
                                 <div class="flex flex-row items-center gap-2 ml-6">
@@ -760,7 +784,7 @@
                                     </svg>
                                     <input class="text-xl font-normal" type="email" placeholder="name@domain.com">
                                 </div>
-                                <button class="bg-[#6D1600] w-44 h-16 rounded-lg text-xl text-white mr-2">Send</button>
+                                <button class="bg-primary w-44 h-16 rounded-lg text-xl text-white mr-2">Send</button>
                             </div>
                         </div>
                     </div>

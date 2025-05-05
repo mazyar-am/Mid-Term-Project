@@ -1,19 +1,22 @@
-module.exports = {
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
-      },
+// module.exports = {
 
-      colors: {
-        'primary': ["#6D1600"]
-        ,
-        'secondary': ["#282A3A"]
-        ,
-        'border': ["#D9D9D9"]
+//   theme: {
+//     extend: {
 
-      }
-    }
-  }
-}
+//       fontFamily: {
+//         inter: "'Inter', sans-serif",
+//         playfair: "'Playfair Display', serif",
+//       },
+
+//       colors: {
+//         primary: '#6D1600',
+//         secondary: '#282A3A',
+//         border: '#D9D9D9',
+//       },
+//     },
+//   },
+//   variants: {
+//     extend: {},
+//   },
+//   plugins: [],
+// }
